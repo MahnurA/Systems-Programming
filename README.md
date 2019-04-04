@@ -2,7 +2,7 @@
 
 ## Architecture
 
-This client server model utilizes pipes, sockets and threads
+This client-server model utilizes pipes, sockets and threads.
 
 ## Server
 
@@ -48,30 +48,28 @@ Run the Server file on a different computer than the client. The client file can
 ## Commands
 
 ### For the client:
-help – shows the user how to use the add, sub, div, mul commands
-run [program name] - to run any program
-list – to list all active processes, shows their names, pids, start time, end time, elapsed time and their
-status.
-listall – shows a list of all active and inactive processes and their subsequent info
-kill [pid] – kills the process identified by the ID given
-kill [name] – kills program whose name is given, if multiple instances of the same program are open
-then only one is killed.
-Kill all – kills all active processes open by the client
-add – followed by numbers that user wants to be added
-sub – followed by numbers that user wants to subtract
-div - followed by numbers that user wants to divide
-mul – followed by numbers that user wants to multiply
-connect – followed by IP and port number to which the client wishes to connect to
-disconnect – the client disconnects from the server
-exit – the client kills all its active processes and then shuts itself down
+help – shows the user how to use the add, sub, div, mul commands.<br/>
+run [program name] - to run any program.<br/>
+list – to list all active processes, shows their names, pids, start time, end time, elapsed time and their status.<br/>
+listall – shows a list of all active and inactive processes and their subsequent info.<br/>
+kill [pid] – kills the process identified by the ID given.<br/>
+kill [name] – kills program whose name is given, if multiple instances of the same program are open, then only one is killed.<br/>
+Kill all – kills all active processes open by the client.<br/>
+add – followed by the numbers that the user wants to add together.<br/>
+sub – followed by numbers that user wants to subtract.<br/>
+div - followed by numbers that user wants to divide.<br/>
+mul – followed by numbers that user wants to multiply.<br/>
+connect – followed by IP and port number to which the client wishes to connect to.<br/>
+disconnect – to disconnect client from the server.<br/>
+exit – to kill all it's (client's) active processes and shut itself down.<br/>
 
 ### For the server
-list – lists all processes of all clients
-list [IP] – lists all processes of the client with the given IP
-list connections – lists IP and port number of all the clients connected
-exit – kills all client processes, thus disconnecting them and then kills itself.
+list – lists all processes of all clients.<br/>
+list [IP] – lists all processes of the client with the given IP.<br/>
+list connections – lists IP and port number of all the clients connected.<br/>
+exit – kills all client processes, thus disconnecting them and then kills itself.<br/>
 
 Limitations 
-Failed run command not handled.
-Client cannot reconnect once it requests disconnection
+Failed run command not handled.<br/>
+Client cannot reconnect once it requests disconnection.<br/>
 
